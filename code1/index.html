@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Delivery | mymeals.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="css/phone.css">
+
+    <style>
+        /* CSS reset  */
+        * {
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+        /* CSS varriables  */
+        :root {}
+
+
+
+        /* NAvigation bar logo img  */
+
+        #logo img {
+            padding: 5px 5px;
+            height: 54px;
+            width: 53px;
+            border-radius: 42px;
+
+        }
+
+
+        /* Navigation  */
+        #navbar {
+            color: red;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            position: sticky;
+            font-family: 'Baloo 2', cursive;
+            align-items: center;
+            top: 0px;
+
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+
+        }
+
+        /* Navigation bar ul  */
+
+        #navbar ul {
+            display: flex;
+        }
+
+        .item {
+
+            list-style: none;
+
+        }
+
+        #navbar ul li a {
+            display: block;
+            text-decoration: none;
+            margin: 20px 20px;
+            padding: 5px 5px;
+            border-radius: 20px;
+            color: white;
+
+        }
+
+        #navbar ul li a:hover {
+
+            background-color: white;
+            color: black;
+
+        }
+
+        /* HOME SECTION  */
+        #home {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 200px;
+            height: 550px;
+
+            font-family: 'Bree Serif', serif;
+
+
+
+        }
+
+        #home::before {
+            content: "";
+            background: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg') center;
+            top: 0px;
+            left: 0px;
+
+            height: 600px;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.8;
+
+        }
+
+        /* Utilities clases  */
+
+        .h-primary-home {
+            font-size: 1.8rem;
+            padding: 20px 20px;
+
+        }
+
+        .btn {
+            border: 2px solid black;
+            background-color: red;
+            border-radius: 9px;
+            margin: 18px;
+            padding: 6px 22px;
+            cursor: pointer;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: red;
+            font-size: 14px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        /* SERVICES SECTION  */
+
+        .h-primary-center {
+            font-size: 1.8rem;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 20px 30px;
+
+        }
+
+        #services {
+            display: flex;
+
+        }
+
+        #services .box {
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 18px 7px;
+            padding: 10px 23px;
+            border-radius: 22px;
+            background-color: #f6e8e8;
+
+
+        }
+
+
+        #services .box img {
+            height: 156px;
+            width: 210px;
+            display: block;
+            margin: auto;
+            border-radius: 105px;
+
+        }
+
+        #sevices h2 {
+            color: red;
+        }
+
+        /* CLIENTS SECTION  */
+
+        #clients-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        #clients-section::before {
+            content: '';
+            background: url(https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758__340.jpg);
+            border-radius: 20px;
+            height: 275px;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 1.7;
+        }
+
+        .client-item img {
+            height: 140px;
+            margin: 20px 20px;
+        }
+
+        .clients {
+            display: flex;
+        }
+
+        .h-primary-clients {
+            font-size: 2rem;
+            text-shadow: -2px 0px white;
+
+
+            margin: 30px 30px;
+        }
+
+        #contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 438px;
+
+        }
+
+        #contact::before {
+            content: '';
+            position: absolute;
+            background: url('https://cdn.pixabay.com/photo/2017/11/17/09/37/finger-2956974__340.jpg');
+            height: 408px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            border-radius: 20px;
+
+        }
+
+        .contact-box label {
+            font-size: 1rem;
+
+        }
+
+        .contact-box input {
+            text-align: center;
+        }
+
+        .form-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn {
+            border: 2px solid black;
+            background-color: red;
+            border-radius: 9px;
+            margin: 18px;
+            padding: 6px 22px;
+            cursor: pointer;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+
+        }
+        .btn1{
+            border: 2px solid black;
+            background-color: red;
+            border-radius: 9px;
+            margin: 13px auto;
+            padding: 6px 22px;
+            cursor: pointer;
+             display: flex;
+            justify-content: center;
+            align-items: center; 
+
+        }
+        
+        .btn1:hover {
+            background-color: white;
+            color: red;
+            font-size: 14px;
+        }
+
+        .center {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <!-- PHONE CSS  -->
+    <style media="screen and (max-width:920px">
+        /* NAvigation section */
+        #navbar {
+
+            flex-direction: column;
+            height: auto
+        }
+
+        #navbar ul li a {
+            margin: -8px 2px;
+            margin-bottom: 2px;
+            font-size: 1rem;
+
+        }
+
+
+        /* Home section */
+        #home {
+            padding: 3px 40px;
+            height: 339px;
+        }
+
+        #home::before {
+            height: 440px;
+
+        }
+
+        .h-primary-home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        /* Services Section  */
+        #services {
+            flex-direction: column;
+
+        }
+
+        .services-container {}
+
+        .h-primary-center {
+            margin: 14px 35px;
+            margin-top: 14px;
+            margin-bottom: -4px;
+        }
+
+        /* Clients Section  */
+
+        #clients-section {
+            overflow: hidden;
+        }
+
+        .clients {
+
+            flex-wrap: wrap;
+        }
+
+        #clients-section::before {
+            height: 446px;
+        }
+
+        .clients img {
+            width: 89px;
+            height: 81px;
+            padding: 0px 10px;
+            margin: 0px 0px;
+        }
+
+        .h-primary-clients {
+            margin-bottom: 0px;
+            position: relative;
+        }
+
+
+        /* Contact US Section   */
+
+.contact-box{
+    width: 70%;
+}
+
+        /* Footer Section  */
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Zomato_Logo.jpg" alt=" logo">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#clients-section">Our clients</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h4 class="h-primary-home">Welcome to Online Meal</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adip</p>
+        <button class="btn">Order now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary-center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/21/47/american-1239091_960_720.jpg" alt="first image"
+                    srcset="">
+                <h2 class="h-secondary-center">
+                    Food Catering
+                </h2>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quam omnis ex eum
+                    voluptates sed
+                    laborum natus maxime iure provident nulla beatae dignissimos earum molestias ab repellat vitae,
+                    voluptas illo! Quas, placeat ut! Rem.</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2022/01/28/12/17/fast-food-6974507__340.jpg" alt="first image"
+                    srcset="">
+                <h2 class="h-secondary-center">
+                    Bulk Ordering
+                </h2>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quam omnis ex eum
+                    voluptates sed
+                    laborum natus maxime iure provident nulla beatae dignissimos earum molestias ab repellat vitae,
+                    voluptas illo! Quas, placeat ut! Rem.</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn.pixabay.com/photo/2020/05/25/08/40/food-delivery-5217579_960_720.png"
+                    alt="first image" srcset="">
+                <h2 class="h-secondary-center">
+                    Food Ordering
+                </h2>
+                <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quam omnis ex eum
+                    voluptates sed
+                    laborum natus maxime iure provident nulla beatae dignissimos earum molestias ab repellat vitae,
+                    voluptas illo! Quas, placeat ut! Rem.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="clients-section">
+        <h1 class="h-primary-clients">Our Clients</h1>
+        <div class="clients">
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png"
+                    alt="our clients">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png"
+                    alt="our clients">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png"
+                    alt="our clients">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png"
+                    alt="our clients">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png"
+                    alt="our clients">
+            </div>
+            <div class="client-item">
+                <img src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-antivirus-software-policy-library-and-information-34.png"
+                    alt="our clients">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary-center">
+            Contact Us
+        </h1>
+        <div class="contact-box">
+            <form action="">
+                <div class="form-item">
+                    <label for="Name">Name: </label>
+                    <input type="text" placeholder="Enter your Name" id="name">
+                </div>
+                <div class="form-item">
+                    <label for="Phone">Phone Number: </label>
+                    <input type="number" placeholder="Enter your Phone Number" id="Phone">
+                </div>
+                <div class="form-item">
+                    <label for="email">Email: </label>
+                    <input type="text" placeholder="Enter your Email" id="email">
+                </div>
+                <div class="form-item">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10">Message</textarea>
+                </div>
+                <button class="btn1">Submit</button>
+            </form>
+
+
+        </div>
+
+    </section>
+    <footer class="center">
+        copyright &copy; myonlinemeals.com
+
+    </footer>
+
+
+</body>
+
+</html>
