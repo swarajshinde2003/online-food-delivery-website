@@ -1,0 +1,294 @@
+/* CSS reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+/* CSS varriables  */
+:root {}
+
+
+
+/* NAvigation bar logo img  */
+
+#logo img {
+    padding: 5px 5px;
+    height: 54px;
+    width: 53px;
+    border-radius: 42px;
+
+}
+
+
+/* Navigation  */
+#navbar {
+    color: red;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    font-family: 'Baloo 2', cursive;
+    align-items: center;
+    top: 0px;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+/* Navigation bar ul  */
+
+#navbar ul {
+    display: flex;
+}
+
+.item {
+
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 20px 20px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    color: white;
+
+}
+
+#navbar ul li a:hover {
+
+    background-color: white;
+    color: black;
+
+}
+
+/* HOME SECTION  */
+#home {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 550px;
+
+    font-family: 'Bree Serif', serif;
+
+
+
+}
+
+#home::before {
+    content: "";
+    background: url('https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg') center;
+    top: 0px;
+    left: 0px;
+
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+/* Utilities clases  */
+
+.h-primary-home {
+    font-size: 1.8rem;
+    padding: 20px 20px;
+
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 9px;
+    margin: 18px;
+    padding: 6px 22px;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: red;
+    font-size: 14px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* SERVICES SECTION  */
+
+.h-primary-center {
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px 30px;
+
+}
+
+#services {
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 7px;
+    padding: 10px 23px;
+    border-radius: 22px;
+    background-color: #f6e8e8;
+
+
+}
+
+
+#services .box img {
+    height: 156px;
+    width: 210px;
+    display: block;
+    margin: auto;
+    border-radius: 105px;
+
+}
+
+#sevices h2 {
+    color: red;
+}
+
+/* CLIENTS SECTION  */
+
+#clients-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#clients-section::before {
+    content: '';
+    background: url(https://cdn.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758__340.jpg);
+    border-radius: 20px;
+    height: 275px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 1.7;
+}
+
+.client-item img {
+    height: 140px;
+    margin: 20px 20px;
+}
+
+.clients {
+    display: flex;
+}
+
+.h-primary-clients {
+    font-size: 2rem;
+    text-shadow: -2px 0px white;
+
+
+    margin: 30px 30px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 438px;
+
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2017/11/17/09/37/finger-2956974__340.jpg');
+    height: 408px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 20px;
+
+}
+
+.contact-box label {
+    font-size: 1rem;
+
+}
+
+.contact-box input {
+    text-align: center;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 9px;
+    margin: 18px;
+    padding: 6px 22px;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+
+}
+.btn1{
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 9px;
+    margin: 13px auto;
+    padding: 6px 22px;
+    cursor: pointer;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.btn1:hover {
+    background-color: white;
+    color: red;
+    font-size: 14px;
+}
+
+.center {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
